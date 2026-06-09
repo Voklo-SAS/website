@@ -1,0 +1,124 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { 
+	title = 'Algar SAS - Automatizamos tu Éxito', 
+	description = 'Soluciones empresariales innovadoras para transformar tu negocio. Desarrollo de software, consultoría TI, automatización y soporte técnico.'
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+		<link rel="icon" href="assets/favicon.ico" />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--primary-color: #1f2937;
+		--secondary-color: #8b1538;
+		--accent-color: #fbbf24;
+		--text-color: #374151;
+		--light-gray: #f9fafb;
+		--accent-gradient: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+		--secondary-gradient: linear-gradient(135deg, #8b1538 0%, #6b1129 100%);
+	}
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		min-height: 100%;
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+		color: var(--text-color);
+		background: #ffffff;
+	}
+
+	body {
+		padding-top: 80px; /* Account for fixed header */
+	}
+
+	main {
+		min-height: calc(100vh - 80px);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		font-weight: 700;
+		line-height: 1.2;
+		color: var(--primary-color);
+	}
+
+	p {
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	button {
+		font-family: inherit;
+		cursor: pointer;
+	}
+
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	@media (max-width: 768px) {
+		body {
+			padding-top: 70px;
+		}
+
+		.container {
+			padding: 0 1rem;
+		}
+	}
+</style>
