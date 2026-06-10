@@ -4,7 +4,7 @@ import strategicPartners from '../assets/strategic-partners.png';
 ---
 
 <Layout 
-  title="Algar SAS - Automatizamos tu Éxito"
+  title="Voklo SAS - Automatizamos tu Éxito"
   description="Soluciones empresariales innovadoras para transformar tu negocio. Desarrollo de software, consultoría TI, automatización y soporte técnico."
 >
   <!-- Animated Background -->
@@ -19,7 +19,7 @@ import strategicPartners from '../assets/strategic-partners.png';
       <div class="hero-content">
         <h1 id="typing-text"></h1>
         <p class="hero-subtitle">
-          En Algar S.A.S nos encargamos de que tus procesos empresariales sean claros, eficientes y fáciles de seguir para tus empleados buscando
+          En Voklo S.A.S nos encargamos de que tus procesos empresariales sean claros, eficientes y fáciles de seguir para tus empleados buscando
           optimizar tus recursos y tiempo para que tú te enfoques en hacer felices a tus clientes.
         </p>
       </div>
@@ -29,7 +29,7 @@ import strategicPartners from '../assets/strategic-partners.png';
   <!-- Benefits Section -->
   <section class="benefits">
     <div class="container">
-      <h2>¿Por Qué Elegir Algar SAS?</h2>
+      <h2>¿Por Qué Elegir Voklo SAS?</h2>
       <p class="benefits-subtitle">
         Los pilares de nuestra empresa buscan facilitarte el manejo de tus procesos empresariales a través de la estandarización y automatización.
       </p>
@@ -154,7 +154,7 @@ import strategicPartners from '../assets/strategic-partners.png';
             🎁 <strong>PERÍODO DE PRUEBA GRATUITO</strong><br />
             <span style="font-size: 1.1em;">3 MESES GRATUITOS</span>
           </div>
-          <a href="mailto:ventas@algar.com.co" class="cta-button">¡Quiero ser equipo fundador!</a>
+          <a href="mailto:ventas@Voklo.com.co" class="cta-button">¡Quiero ser equipo fundador!</a>
           <hr />
           <div class="features-list with-icons">
             <div class="features-feature">
@@ -190,7 +190,7 @@ import strategicPartners from '../assets/strategic-partners.png';
             🎁 <strong>PERÍODO DE PRUEBA GRATUITO</strong><br />
             <span style="font-size: 1.1em;">3 MESES GRATUITOS</span>
           </div>
-          <a href="mailto:ventas@algar.com.co" class="cta-button">¡Quiero ser equipo fundador!</a>
+          <a href="mailto:ventas@Voklo.com.co" class="cta-button">¡Quiero ser equipo fundador!</a>
           <hr />
           <div class="features-list with-icons">
             <div class="features-feature">
@@ -229,7 +229,7 @@ import strategicPartners from '../assets/strategic-partners.png';
             🎁 <strong>PERÍODO DE PRUEBA GRATUITO</strong><br />
             <span style="font-size: 1.1em;">3 MESES GRATUITOS</span>
           </div>
-          <a href="mailto:ventas@algar.com.co" class="cta-button">¡Quiero ser equipo fundador!</a>
+          <a href="mailto:ventas@Voklo.com.co" class="cta-button">¡Quiero ser equipo fundador!</a>
           <hr />
           <div class="features-list with-icons">
             <div class="features-feature">
@@ -278,7 +278,7 @@ import strategicPartners from '../assets/strategic-partners.png';
             <div class="contact-icon">📧</div>
             <div class="contact-details">
               <h3>Email</h3>
-              <p>algarsasapp@gmail.com</p>
+              <p>Voklosasapp@gmail.com</p>
             </div>
           </div>
           <div class="contact-item">
@@ -777,6 +777,15 @@ import strategicPartners from '../assets/strategic-partners.png';
 </style>
 
 <script>
+
+    //For the event of "reto-voklo" the website will redirect to the page "reto-voklo/index.astro" which will have the a market strategic for new users.
+    //Redirect to "reto-voklo/index.astro" after entering the website for the first time, but if the user has already entered the website, it will not redirect again.
+
+    if (window.location.pathname === '/' && !localStorage.getItem('visited')) {
+    localStorage.setItem('visited', 'true');
+    window.location.href = '/reto-voklo';
+    }
+
   // Typing animation for hero
   const typingPhrases = [
     '¿Cansado del "Teléfono Roto" en tu Empresa?',

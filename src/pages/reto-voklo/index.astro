@@ -1,8 +1,669 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+const faqQuestions = [
+    {
+        question: "¿Es muy complejo de implementar?",
+        answer: 'Al contrario, el objetivo es quitarte complejidad. La mayoría de las metodologías fallan porque crean manuales interminables que nadie lee. En Voklo, trabajamos sobre tu realidad operativa. No venimos a darte "tarea" extra, venimos a simplificar lo que ya haces. Nuestro proceso de 7 días es ágil, directo y diseñado para que veas resultados sin detener la operación de tu empresa.',
+    },
+    {
+        question: "¿Qué pasa si mi empresa es muy pequeña/grande?",
+        answer: 'La necesidad de estandarizar no depende del tamaño de la empresa, sino de la dependencia operativa. Si eres un negocio pequeño, te ayudamos a liberar al fundador del "día a día". Si eres una empresa más grande, eliminamos los cuellos de botella que frenan tu crecimiento. Nuestra metodología es modular y se adapta al punto en el que estés hoy, para llevarte a donde quieres estar mañana.',
+    },
+    {
+        question: "¿Cómo se mide el éxito de la estandarización?",
+        answer: 'No medimos el éxito por cuántos documentos escribimos, sino por resultados tangibles:<ul><li>Autonomía: El proceso deja de depender 100% de ti (o de una sola persona clave).</li><li>Consistencia: Los errores operativos disminuyen drásticamente porque ahora hay un "cómo se hacen las cosas" claro.</li><li>Tiempo: Recuperas horas de tu semana que antes dedicabas a apagar incendios, para que puedas enfocarte en la estrategia y el crecimiento.</li></ul>',
+    },
+];
 ---
 
-<Layout>
-    
+<Layout
+    title="Reto Voklo - Soluciones Innovadoras para tu Negocio"
+    description="Descubre cómo Voklo puede transformar tu negocio con soluciones innovadoras y personalizadas. Identifica los desafíos que enfrenta tu empresa y cómo podemos ayudarte a superarlos. Contáctanos para saber más sobre nuestros servicios."
+>
+    <!-- Hero - Reto Voklo -->
+    <section class="reto-voklo-header">
+        <div class="container">
+            <h1>Reto Voklo: Tu Operación al Siguiente Nivel</h1>
+            <p class="hero-subtitle">
+                Estandariza 2 cargos clave en 7 días y accede a 6 meses de mantenimiento al precio de uno
+            </p>
+            <div class="hero-highlights">
+                <div class="highlight">
+                    <span class="highlight-value">2x1</span>
+                    <span class="highlight-label">En Cargos</span>
+                </div>
+                <div class="highlight">
+                    <span class="highlight-value">7 Días</span>
+                    <span class="highlight-label">Para Resultados</span>
+                </div>
+                <div class="highlight">
+                    <span class="highlight-value">0% Riesgo</span>
+                    <span class="highlight-label">Metodología Probada</span>
+                </div>
+            </div>
+            <a href="#desafio-cta" class="btn-primary">Aceptar el Desafío Voklo</a>
+        </div>
+    </section>
+    <!-- Section - Dolor del usuario -->
+    <section class="reto-voklo-dolor">
+        <div class="container">
+            <h2>Antes de Vender la Solución, Toquemos la Herida</h2>
+            <p class="dolor-subtitle">
+                ¿Sientes que tu equipo depende demasiado de tu supervisión directa? ¿La rotación de personal o la falta de procesos claros te hace perder dinero?
+            </p>
+            
+            <div class="valor-section">
+                <h3>La Propuesta de Valor: El Método Voklo</h3>
+                <p>No es magia, <strong>es metodología probada</strong></p>
+            </div>
+
+            <p>Nuestra metodología es modular y se adapta al punto en el que estés hoy, no experimentamos con tu empresa. Aplicamos un método quirúrgico que ya se ha probado en diferentes sectores. Por lo anterior, buscamos resultados concretos y medibles desde el primer día. Esta metodología garantiza que cada acción tenga un impacto directo en tu operación. Lo anterior lo logramos a tráves de nuestros 3 pasos clave.</p>
+
+            <div class="pasos-section">
+                <h3>Nuestros 3 Pasos hacia la Eficiencia</h3>
+                <div class="pasos-grid">
+                    <div class="paso">
+                        <div class="paso-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <h4>1. Diagnóstico Quirúrgico</h4>
+                        <p>Identificamos los cuellos de botella que consumen tu tiempo. No tocamos lo que funciona; optimizamos lo que te hace perder dinero.</p>
+                    </div>
+                    
+                    <div class="paso">
+                        <div class="paso-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                                <circle cx="5" cy="12" r="1"></circle>
+                                <path d="M12 6v12M6 9v6M18 9v6"></path>
+                            </svg>
+                        </div>
+                        <h4>2. Estructuración Ágil</h4>
+                        <p>Diseñamos procesos ejecutables y claros. Transformamos tu "caos operativo" en pasos sencillos que tu equipo pueda seguir desde el día 1.</p>
+                    </div>
+                    
+                    <div class="paso">
+                        <div class="paso-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 16L3 5h18l-2 11M6 8h12M8 12h8M7 16h10"></path>
+                                <path d="M8 20v1M16 20v1"></path>
+                            </svg>
+                        </div>
+                        <h4>3. Despliegue Inmediato</h4>
+                        <p>Pasamos a la acción. En menos de 7 días, tu operación estará estandarizada y tú recuperarás el control estratégico de tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section - Desafio -->
+    <section class="reto-voklo-desafio" id="desafio-cta">
+        <div class="container">
+            <h2 >El Desafío Voklo: Tu Operación al Siguiente Nivel</h2>
+            <p class="desafio-intro">
+                No queremos solo venderte un servicio, queremos retarte a transformar tu empresa. Hemos diseñado una oferta de bajo riesgo para que compruebes, en tiempo récord, que la estandarización es el camino real para escalar.
+            </p>
+            
+            <div class="oferta-section">
+                <h3>La Oferta: Estandariza 2x1</h3>
+                <p class="oferta-descripcion">Acepta el desafío y nosotros te apoyamos con nuestra tecnología de estandarizar los procesos de 2 cargos clave de tu empresa en un máximo de 7 días.</p>
+                
+                <div class="beneficios-grid">
+                    <div class="beneficio">
+                        <h4>¿Cuál es tu beneficio?</h4>
+                        <p>Si logramos el objetivo en el tiempo estipulado, activamos automáticamente nuestra recompensa <strong>2x1</strong>: durante los próximos 6 meses, mantendrás la estandarización de ambos cargos al precio de uno. Y podrás seguir estandarizando el 100% de tu empresa.</p>
+                    </div>
+                    
+                    <div class="beneficio">
+                        <h4>¿Por qué es un riesgo mínimo para ti?</h4>
+                        <ul>
+                            <li><strong>Metodología Probada:</strong> No experimentamos con tu empresa. Aplicamos un método quirúrgico que ya se ha probado en diferentes sectores.</li>
+                            <li><strong>Velocidad de Resultados:</strong> No pasamos meses planeando. En 7 días verás cambios tangibles en la operatividad de tus equipos.</li>
+                            <li><strong>Enfoque:</strong> Nos centramos en los procesos que hoy te hacen perder dinero y tiempo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exclusividad-section">
+                <h3>Condiciones de la Exclusividad</h3>
+                <p>Esta oportunidad es para líderes que realmente quieren escalar y no tienen tiempo que perder.</p>
+                
+                <div class="condiciones">
+                    <div class="condicion">
+                        <strong>📅 Cupos limitados</strong>
+                        <p>Solo aceptaremos solicitudes hasta el 31 de julio, o hasta completar 50 microempresas.</p>
+                    </div>
+                    <div class="condicion">
+                        <strong>👥 Perfil requerido</strong>
+                        <p>Debes ser microempresario: solo para quienes tienen mínimo 3 colaboradores activos.</p>
+                    </div>
+                    <div class="condicion">
+                        <strong>✅ Compromiso</strong>
+                        <p>Al inscribirte, te comprometes a colaborar con nuestro equipo para activar tu usuario inmediatamente tras el contacto.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>¿Listo para dejar de ser el "todero" de tu empresa?</h3>
+                <a href="https://wa.me/?text=Hola%20Voklo%2C%20quiero%20aceptar%20el%20Desafío%20Voklo" class="btn-desafio" target="_blank">Aceptar el Desafío Voklo</a>
+            </div>
+        </div>
+    </section>
+    <!-- Section - CTA -->
+    <section class="reto-voklo-cta">
+        <div class="container">
+            <h2>El Momento de Escalar es Hoy</h2>
+            <p class="cta-subtitle">
+                No permitas que tu empresa siga consumiendo tu energía y tu tiempo. El Desafío Voklo es la oportunidad definitiva para pasar de "todero" a director de una empresa sistematizada.
+            </p>
+            
+            <div class="cta-reminder">
+                <h3>Recuerda: El 2x1 Termina Pronto</h3>
+                <h3>Por tiempo limitado</h3>
+                <p class="timer"></p>
+                <p>Tenemos cupos limitados para asegurar que cada empresa reciba la atención quirúrgica que prometemos. <strong>La fecha límite es el 31 de julio.</strong></p>
+            </div>
+            
+            <a href="https://wa.me/?text=Hola%20Voklo%2C%20quiero%20aceptar%20el%20Desafío%20Voklo" class="btn-cta-primary" target="_blank">Aceptar el Desafío Voklo Ahora</a>
+        </div>
+    </section>
+    <!-- Section - FAQ -->
+    <section class="reto-voklo-faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes sobre el reto Voklo</h2>
+            <p>
+                Aquí respondemos las preguntas más comunes que recibimos sobre el
+                reto Voklo. Si tienes alguna otra duda, no dudes en contactarnos.
+            </p>
+            <div class="faq-wrapper">
+                <div class="faq-list">
+                    {
+                        faqQuestions.map(({ question, answer }) => (
+                            <details class="faq-item">
+                                <summary>{question}</summary>
+                                {/* Escape format */}
+                                <p set:html={answer} />
+                            </details>
+                        ))
+                    }
+                </div>
+                <div class="faq-cta">
+                    <h3>¿Tienes una última pregunta?</h3>
+                    <p>Estamos listos para ayudarte.</p>
+                    <a
+                        href="https://wa.me/?text=Hola%20Voklo%2C%20tengo%20una%20pregunta"
+                        class="btn-whatsapp"
+                        target="_blank"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 48 48"
+                        >
+                            <path
+                                fill="#fff"
+                                d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"
+                            ></path><path
+                                fill="#fff"
+                                d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"
+                            ></path><path
+                                fill="#cfd8dc"
+                                d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"
+                            ></path><path
+                                fill="#40c351"
+                                d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"
+                            ></path><path
+                                fill="#fff"
+                                fill-rule="evenodd"
+                                d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z"
+                                clip-rule="evenodd"></path>
+                        </svg> Contactar por WhatsApp</a
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
+
+<style>
+    section {
+        width: 100%;
+        min-height: auto;
+        padding: 4rem 0;
+    }
+
+    .container h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .reto-voklo-header {
+        background: var(--accent-gradient);
+        color: white;
+        text-align: center;
+        padding: 6rem 0;
+    }
+
+    .reto-voklo-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        opacity: 0.95;
+    }
+
+    .hero-highlights {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+    }
+
+    .highlight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1.5rem 2rem;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+    }
+
+    .highlight-value {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+    }
+
+    .highlight-label {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        opacity: 0.9;
+    }
+
+    .reto-voklo-header .btn-primary {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 1rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .reto-voklo-header .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .reto-voklo-dolor {
+        background: white;
+        color: var(--text-color);
+    }
+
+    .dolor-subtitle {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: 1rem 0 2rem;
+        color: var(--accent-color);
+    }
+
+    .valor-section {
+        background: var(--light-gray);
+        padding: 2rem;
+        border-radius: 12px;
+        margin: 2rem 0;
+    }
+
+    .valor-section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .valor-section strong {
+        color: var(--accent-color);
+    }
+
+    .pasos-section {
+        margin: 3rem 0;
+    }
+
+    .pasos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .paso {
+        background: white;
+        border: 2px solid var(--light-gray);
+        border-radius: 12px;
+        padding: 2rem;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .paso:hover {
+        border-color: var(--accent-color);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        transform: translateY(-4px);
+    }
+
+    .paso-icono {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        color: white;
+    }
+
+    .paso-icono svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .paso h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--accent-color);
+    }
+
+    .paso p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--text-color);
+    }
+
+    .reto-voklo-desafio {
+        background: #f9f9f9;
+    }
+
+    .desafio-intro {
+        font-size: 1.1rem;
+        margin: 1rem 0 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .oferta-section {
+        background: white;
+        border-left: 4px solid var(--accent-color);
+        padding: 2rem;
+        margin: 2rem 0;
+        border-radius: 8px;
+    }
+
+    .oferta-descripcion {
+        font-size: 1.05rem;
+        margin: 1rem 0;
+        font-weight: 500;
+    }
+
+    .beneficios-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .beneficio {
+        background: var(--light-gray);
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .beneficio h4 {
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .beneficio ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .beneficio li {
+        margin-bottom: 0.75rem;
+        line-height: 1.6;
+    }
+
+    .exclusividad-section {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        margin-top: 2rem;
+    }
+
+    .exclusividad-section h3 {
+        margin-bottom: 1rem;
+        color: var(--accent-color);
+    }
+
+    .condiciones {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .condicion {
+        background: var(--light-gray);
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 3px solid var(--secondary-color);
+    }
+
+    .condicion strong {
+        display: block;
+        color: var(--accent-color);
+        font-size: 1.05rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .condicion p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .cta-section {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .cta-section h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        color: var(--accent-color);
+    }
+
+    .btn-desafio,
+    .btn-cta-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        font-size: 1.05rem;
+    }
+
+    .btn-desafio:hover,
+    .btn-cta-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .reto-voklo-cta {
+        background: var(--accent-gradient);
+        color: white;
+        text-align: center;
+    }
+
+    .cta-subtitle {
+        font-size: 1.1rem;
+        margin: 1rem 0 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta-reminder {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+        backdrop-filter: blur(10px);
+    }
+
+    .cta-reminder h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .timer {
+        font-size: 4rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+        margin-top: 1rem;
+    }
+
+    .reto-voklo-faq {
+        background: white;
+    }
+
+    .reto-voklo-faq .faq-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .reto-voklo-faq .faq-wrapper div {
+        width: 50%;
+    }
+
+    .reto-voklo-faq .btn-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: #25d366;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .faq-list {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .faq-item {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid var(--light-gray);
+        padding-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .hero-highlights {
+            gap: 1rem;
+        }
+
+        .pasos-grid,
+        .beneficios-grid,
+        .condiciones {
+            grid-template-columns: 1fr;
+        }
+
+        .reto-voklo-faq .faq-wrapper {
+            flex-direction: column;
+        }
+
+        .reto-voklo-faq .faq-wrapper div {
+            width: 100%;
+        }
+
+        .reto-voklo-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .btn-desafio,
+        .btn-cta-primary {
+            font-size: 0.95rem;
+            padding: 0.75rem 1.5rem;
+        }
+    }
+
+    .faq-item summary {
+        font-weight: bold;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--light-gray);
+        cursor: pointer;
+    }
+
+    .faq-item p {
+        margin-top: 0.5rem;
+        color: var(--text-color);
+    }
+</style>
+
+<script>
+    // Countdown timer for the CTA section
+    const timerElement = document.querySelector(
+        ".timer",
+    ) as HTMLParagraphElement;
+    const targetDate = new Date("2026-06-15T00:00:00"); // Set your target date here
+
+    function updateTimer() {
+        const now = new Date();
+        const timeDifference = targetDate.getTime() - now.getTime();
+
+        if (timeDifference <= 0) {
+            timerElement.textContent = "¡Oferta Expirada!";
+            return;
+        }
+
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeDifference / 1000) % 60);
+
+        timerElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    setInterval(updateTimer, 1000);
+</script>
