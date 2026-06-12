@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import logo from "../assets/logo-blanco.svg";
 
 interface Props {
 	title?: string;
@@ -19,8 +20,8 @@ const {
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-		<link rel="icon" href="assets/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href={logo.src} />
+		<link rel="icon" href="favicon.ico" />
 		
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
