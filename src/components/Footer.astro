@@ -1,11 +1,13 @@
 ---
 // Footer component
+import logo from '../assets/logo-blanco.svg';
 ---
 
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-content">
-      <div class="footer-section">
+      <div class="footer-section" style="display: flex; flex-direction: row; gap: 1rem;">
+        <img src={logo.src} width="64" alt="Voklo SAS Logo" class="footer-logo" style="height: 64px !important;" />
         <div class="footer-brand">
           <h3>Voklo SAS</h3>
           <p>Automatizamos tu Éxito</p>
@@ -34,7 +36,7 @@
         <h4>Contacto</h4>
         <div class="footer-contact">
           <p>📧 voklosasapp@gmail.com</p>
-          <p>📱 +57 321 8797817</p>
+          <p>📱 +57 302 7067440</p>
           <p>📍 Cali, Colombia</p>
           <div class="icons-social-media">
             <a href="https://www.facebook.com/voklosoftware/" target="_blank" rel="noopener noreferrer">
