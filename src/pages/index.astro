@@ -13,6 +13,61 @@ import strategicPartners from '../assets/strategic-partners.png';
   <!-- Floating Particles -->
   <div class="particles" id="particles"></div>
 
+  <!-- Video Section - Add iframe with YouTube video -->
+  <section class="video-section">
+    <div class="container">
+      <h1 class="video-title">Conoce a Voklo SAS</h1>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/R_9uWtBskeE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+<style>
+  .video-section {
+    padding: 2rem 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-section .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    width: 100%;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .video-wrapper {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  }
+</style>
+
   <!-- Hero Section -->
   <section class="hero" id="inicio">
     <div class="container">
@@ -298,7 +353,7 @@ import strategicPartners from '../assets/strategic-partners.png';
         </div>
         <div class="form-container">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdXYOURFORMID/viewform?embedded=true"
+            src="https://forms.gle/HQuTsQvKf7pQiQZV8"
             width="100%"
             height="700"
             frameborder="0"
@@ -648,6 +703,25 @@ import strategicPartners from '../assets/strategic-partners.png';
   .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(72, 187, 120, 0.4);
+  }
+
+  .cta-video {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: rgba(255, 61, 0, 0.7);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 2px solid rgba(255, 61, 0, 0.7);
+  }
+
+  .cta-video:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(243, 13, 13, 0.4);
   }
 
   .features-list {
