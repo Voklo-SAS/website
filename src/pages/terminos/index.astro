@@ -5,18 +5,93 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout>
     <!-- Enlaces de los tres enlaces internos -->
-    <div class="content">
+    <div class="content mx-4">
         <!-- Link to condiction-servicio -->
-        <div class="link">
-            <a href="/condiction-servicio">Condiciones de Servicio</a>
+        <div class="card">
+            <a href="terminos/condiction-servicio" class="card-link">
+                <span>Condiciones de Servicio</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
         </div>
         <!-- Link to politica-privacidad -->
-        <div class="link">
-            <a href="/politica-privacidad">Política de Privacidad</a>
+        <div class="card">
+            <a href="terminos/politica-privacidad" class="card-link">
+                <span>Política de Privacidad</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
         </div>
         <!-- Link to datos-usuario -->
-        <div class="link">
-            <a href="/datos-usuario">Datos del Usuario</a>
+        <div class="card">
+            <a href="terminos/datos-usuario" class="card-link">
+                <span>Datos del Usuario</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
         </div>
     </div>
+
+    <style>
+
+        .mx-4 {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+        }
+
+        .card-link span {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .arrow-icon {
+            width: 24px;
+            height: 24px;
+            color: #333;
+            transition: transform 0.3s ease, color 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .card:hover .arrow-icon {
+            transform: translateX(4px);
+            color: #0066cc;
+        }
+    </style>
 </Layout>

@@ -1,0 +1,23 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { Content as UserDataContent } from '../../../assets/Política de Tratamiento de Datos Personales - Ciclo Voklo V2.md';
+
+---
+
+<Layout title="Datos del Usuario" description="Política de privacidad y protección de datos del usuario.">
+    <div class="prose mx-4">
+        <UserDataContent />
+    </div>
+</Layout>
+
+<style>
+    .prose {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .mx-4 {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+</style>

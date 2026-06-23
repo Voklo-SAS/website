@@ -1,0 +1,22 @@
+---
+import { Content as ServiceContent } from '../../../assets/Contrato de Términos de Servicio y Licenciamiento SaaS - Ciclo Voklo V2.md';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Términos y Condiciones" description="Términos y Condiciones de uso del sitio web">
+    <div class="prose mx-4">
+        <ServiceContent />
+    </div>
+</Layout>
+
+<style>
+    .prose {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .mx-4 {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+</style>
