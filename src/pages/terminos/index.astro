@@ -5,10 +5,12 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout>
     <!-- Enlaces de los tres enlaces internos -->
+    <h1 class="mx-4 py-2">Documentación</h1>
+    <h2 class="mx-4 font-graylight">Enlaces a los documentos de Términos y Condiciones</h2>
     <div class="content mx-4">
-        <!-- Link to condiction-servicio -->
+        <!-- Link to condicion-servicio -->
         <div class="card">
-            <a href="terminos/condiction-servicio" class="card-link">
+            <a href="/terminos/condicion-servicio" class="card-link">
                 <span>Condiciones de Servicio</span>
                 <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
@@ -16,10 +18,10 @@ import Layout from "../../layouts/Layout.astro";
                 </svg>
             </a>
         </div>
-        <!-- Link to politica-privacidad -->
+        <!-- Link to datos-usuario, capitulo cuarto, dentro del md file -->
         <div class="card">
-            <a href="terminos/politica-privacidad" class="card-link">
-                <span>Política de Privacidad</span>
+            <a href="/terminos/datos-usuario#capítulo-cuarto-finalidades-del-tratamiento-de-datos" class="card-link">
+                <span>Datos del Usuario</span>
                 <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -28,8 +30,28 @@ import Layout from "../../layouts/Layout.astro";
         </div>
         <!-- Link to datos-usuario -->
         <div class="card">
-            <a href="terminos/datos-usuario" class="card-link">
-                <span>Datos del Usuario</span>
+            <a href="/terminos/datos-usuario" class="card-link">
+                <span>Politica de privacidad</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <!-- Politica de Cookies -->
+        <div class="card">
+            <a href="/terminos/politica-cookies" class="card-link">
+                <span>Política de Cookies</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <!-- Link to terminos-condicion-chatbot  -->
+        <div class="card">
+            <a href="/terminos/terminos-condicion-chatbot" class="card-link">
+                <span>Términos y Condiciones del Chatbot</span>
                 <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -37,6 +59,37 @@ import Layout from "../../layouts/Layout.astro";
             </a>
         </div>
     </div>
+    <h2 class="mx-4 font-graylight">Enlaces a los documentos de facturación y detalles del servicio</h2>
+    <div class="content mx-4">
+        <!-- Plan Básico -->
+        <div class="card">
+            <a href="/terminos/plan-basico" class="card-link">
+                <span>Facturación y Detalles del Servicio: Básico</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="card">
+            <a href="/terminos/plan-standard" class="card-link">
+                <span>Facturación y Detalles del Servicio: Estándar</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="card">
+            <a href="/terminos/plan-premium" class="card-link">
+                <span>Facturación y Detalles del Servicio: Premium</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div> 
 
     <style>
 
@@ -44,9 +97,24 @@ import Layout from "../../layouts/Layout.astro";
             margin-left: 4rem;
             margin-right: 4rem;
         }
+
+        .py-2 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .py-4 {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .font-graylight {
+            color: #5e6980;
+        }
         .content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Make grid from three columns */
+            grid-template-columns: repeat(3, minmax(300px, 1fr));
             gap: 2rem;
             padding: 2rem 0;
         }
