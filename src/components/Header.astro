@@ -40,6 +40,14 @@ import logo from '../assets/logo.png';
         <li class="nav-item">
           <a href="/#contacto" class="nav-link">Contacto</a>
         </li>
+        <!-- Conditional button - Acceder a Ciclo Voklo, sólo aparece en home y ciclo voklo paginas -->
+        {
+          (Astro.url.pathname === '/' || Astro.url.pathname.startsWith('/productos/ciclo-voklo')) && (
+            <li class="btn-login">
+              <a href="https://ciclo-voklo.vercel.app/" >Acceder a Ciclo Voklo</a>
+            </li>
+          )
+        }
       </ul>
 
       <button class="nav-toggle" aria-label="Toggle navigation">
@@ -148,14 +156,14 @@ import logo from '../assets/logo.png';
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0;
     background: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 0.5rem 0;
     min-width: 200px;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
   }
 
   .nav-dropdown:hover .dropdown-content {
@@ -187,6 +195,16 @@ import logo from '../assets/logo.png';
     background: #1f2937;
     transition: all 0.3s ease;
     border-radius: 3px;
+  }
+
+  .btn-login {
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
+    background-color: #009689;
+    color: white;
   }
 
   @media (max-width: 768px) {
